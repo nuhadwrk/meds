@@ -22,7 +22,7 @@ Import inside the installed app: Safari and Home Screen apps may use separate st
 
 ## Privacy and sources
 
-Imports are parsed locally and saved in IndexedDB for this browser and site. No upload endpoint, analytics or external scripts are used. Your selected original PDF is opened locally and is not persisted; select it again after reopening. Offline caching contains only the app files. Imported reference data is stored separately on the device.
+Imports are parsed locally and saved in IndexedDB for this browser and site. No upload endpoint, analytics or external scripts are used. Your selected original PDF is saved as a Blob in local IndexedDB and restored after reopening; it is never uploaded. Browser storage can be evicted, so keep your backup. After data import, setup and file selections are hidden behind Settings. Select your PDF once in Settings after updating to this version. Offline caching contains only the app files. Imported reference data is stored separately on the device.
 
 The data is not encrypted by the app. Anyone with access to this browser profile may view it. Hosting controls the app code: only use a host/repository you trust, and avoid other untrusted apps on the same web origin.
 
